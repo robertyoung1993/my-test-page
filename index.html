@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的模块化博客</title>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <nav class="navbar">
+      <div class="nav-container">
+        <router-link to="/" class="nav-logo">我的博客</router-link>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <router-link to="/" class="nav-link">首页</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/blog" class="nav-link">博客</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/about" class="nav-link">关于</router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-content">
+      <!-- 路由出口 -->
+      <router-view></router-view>
+    </main>
+  </div>
+
+  <!-- 引入 Vue 和 Vue Router -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
+
+  <!-- 引入主应用脚本 -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
