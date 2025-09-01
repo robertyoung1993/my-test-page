@@ -5,8 +5,8 @@ export const Home = {
     template: `
         <div class="home">
           <div class="hero-section">
-            <h1>欢迎来到我的数字花园 🌿</h1>
-            <p>在这里，我记录技术探索、生活感悟与创意火花。</p>
+            <h1>欢迎来到我的数字花园2025 🌿</h1>
+            <p>在这里，记录技术探索、生活感悟与创意火花。</p>
           </div>
 
           <div class="content-section">
